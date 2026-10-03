@@ -1,0 +1,16 @@
+/**
+ * TMH — Keep the media dialog's separator lines off the video 
+ * https://github.com/electricgoat/wiki_video_enhancements
+ */
+
+/* The empty foot's outline covers the bottom row of the video area.
+   TMH hides the foot only in its full-window layout. */
+.mw-tmh-media-dialog .oo-ui-window-foot {
+	display: none;
+}
+
+/* The header's outline covers the top row; draw the separator inside the header */
+.mw-tmh-media-dialog .oo-ui-processDialog-content > .oo-ui-window-head {
+	outline: 0;
+	box-shadow: inset 0 -1px 0 var( --border-color-subtle, #c8ccd1 );
+}
